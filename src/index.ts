@@ -10,7 +10,7 @@ app.use(cors())
 
 // Rota simples que retorna um JSON básico
 app.get('/', (req: Request, res: Response) => {
-  console.log('event request:', JSON.stringify(req))
+  console.log('event request:', req)
   res.send(htmlContent)
   //res.json({ message: 'Hello, World!' })
 })
